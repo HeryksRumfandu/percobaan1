@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: 40px auto;
+    background-color: rgba(121, 111, 84, 0.7);
+    border-radius: 12px;
+    padding: 30px 40px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 24px;
+    text-shadow: 1px 1px 8px rgba(255,255,255,0.8);
+}
+
+fieldset {
+    border: 2px solid #f5c518;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    padding: 18px 28px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+legend {
+    font-size: bold, 1.2rem;
+    font-weight: 600;
+    color: #f5c518;
+    padding: 0 10px;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 1rem;
+    border: 1.8px solid #f5c518;
+    border-radius: 6px;
+    background-color: #222;
+    color: #fff;
+    box-shadow: 0 0 6px #f5c518;
+    margin-top: 6px;
+    margin-bottom: 13px;
+}
+
+input[type="text"]:focus,
+select:focus {
+    outline: none;
+    border-color: #fff200;
+    background-color: #333;
+}
+
+input[type="radio"] {
+    margin-left: 8px;
+    margin-right: 5px;
+    accent-color: #f5c518;
+}
+
+label {
+    font-size: 1.05rem;
+    color: #fff;
+    margin-right: 16px;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 1.32rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #f5c518 0%, #e6b800 100%);
+    border: none;
+    border-radius: 12px;
+    color: #111;
+    cursor: pointer;
+    box-shadow: 0 4px 10px #f5c518aa;
+    margin-top: 10px;
+    transition: background 0.2s ease;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(90deg, #fff200 0%, #f5c518 100%);
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 16px;
+    }
+    h1 {
+        font-size: 1.3rem;
+    }
+    label, input, select {
+        font-size: 0.98rem;
+    }
+}
